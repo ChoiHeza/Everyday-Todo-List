@@ -42,12 +42,47 @@ main {
 
 .todoList {
     padding: 2rem;
+    margin: 1rem;
+    border-radius: 15px;
 }
 
-/* header and list styling */
+/* individual todo list container styling  */
 
-/* make the list items unselectable */
+.everdayList {
+    background-color: lightgrey;
+}
+
+.studyList {
+    background-color: gray;
+}
+
+.workList {
+    background-color: lightgray;
+}
+
+.randomList {
+    background-color: gray;
+}
+
+
+/* header styling */
+
+
+/* list items styling */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
 ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    font-size: 1.5rem;
+    transition: 0.2s;
+
+    /* make the list items unselectable */
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
