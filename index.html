@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Todo List</title>
+</head>
+<body>
+    <div class="todayDate">
+        <h1 id="demo"></h1>
+    </div>
+    
+    <!--& EVERYDAY LIST  -->
+    <div class="everdayList todoList">
+        <div id= "todoInput" class = "todoHeader">
+            <h2>Everyday To Do</h2>
+            <input type="text" id="myInput" placeholder="add todo...">
+            <span onclick= "addNewItem()" class= "addButton">Add</span>
+        </div>
+    
+        <ul id= "myTodoList">
+            <li class= "checked">Read bible</li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!--& STUDY LIST  -->
+    <div class="studyList todoList">
+        <div id= "todoInput" class = "todoHeader">
+            <h2>Study To Do</h2>
+            <input type="text" id="myInput" placeholder="add todo...">
+            <span onclick= "addNewItem()" class= "addButton">Add</span>
+        </div>
+    
+        <ul id= "myTodoList">
+            <li class= "checked">Read bible</li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!--& WORK LIST  -->
+    <div class="workList todoList">
+        <div id= "todoInput" class = "todoHeader">
+            <h2>Work To Do</h2>
+            <input type="text" id="myInput" placeholder="add todo...">
+            <span onclick= "addNewItem()" class= "addButton">Add</span>
+        </div>
+    
+        <ul id= "myTodoList">
+            <li class= "checked">Read bible</li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    
+    <!--& RANDOM LIST  -->
+    <div class="randomList todoList">
+        <div id= "todoInput" class = "todoHeader">
+            <h2>Random To Do</h2>
+            <input type="text" id="myInput" placeholder="add todo...">
+            <span onclick= "addNewItem()" class= "addButton">Add</span>
+        </div>
+    
+        <ul id= "myTodoList">
+            <li class= "checked">Read bible</li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>

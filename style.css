@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+/* colour for each day customization */
+
+.sunday {
+    color: purple;
+    
+}
+
+.monday {
+    color: blue;
+}
+
+.tuesday {
+    color: green;
+}
+
+.wednesday {
+    color: yellow;
+}
+
+.thurday {
+    color: orange;
+}
+
+.friday {
+    color: red;
+}
+
+.saturday {
+    color: pink;
+}
+
+/* overall list container styling */
+
+
+
+
+/* header and list styling */
+
+/* make the list items unselectable */
+ul li {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* stlyes for the add button  */
+.addButton {
+    cursor: pointer;
+}
+
+/* styles for the close button  */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
