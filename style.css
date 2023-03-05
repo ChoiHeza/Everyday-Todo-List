@@ -72,9 +72,33 @@ main {
     text-align: center;
 }
 
+/* style for the input field  */
+input {
+    margin: 0;
+    border: none;
+    border-radius: 10px;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+
+
 /* stlyes for the add button  */
 .addButton {
     cursor: pointer;
+    padding: 5px 10px;
+    width: 25%;
+    background-color: pink;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.addButton:hover {
+    background-color: lightgray;
+    color: pink;
 }
 
 
