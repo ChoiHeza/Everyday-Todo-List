@@ -106,3 +106,39 @@ for (i = 0; i < close.length; i++) {
 }
 
 // add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+
+list.addEventListener('click', function(e) {
+    if (e.target.tagName === 'li') {
+        e.target.classList.toggle('checked');
+    }
+}, false);
+
+
+// adding new list items 
+function addNewItem() {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("myInput").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+
+    if (inputValue === '') {
+        alert("You must write a todo");
+    } else {
+        document.getElementById("myTodoList").appendChild(li);
+    }
+    document.getElementById("myInput").value = "";
+
+    var span = document.createElement("span");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+        }
+    }
+}
